@@ -1,0 +1,14 @@
+/* Content */
+body{
+        margin: 0px;
+        padding: 0px;
+    }
+
+.mainLayout{
+  display: grid;
+  grid-auto-rows: auto 1fr auto;
+}
+
+.mainBGcolor{
+ background-color:#F2F2F2; 
+}
