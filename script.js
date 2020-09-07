@@ -15,4 +15,12 @@
 
 fetch('https://api.unsplash.com/search/photos?query=minimal&client_id=Iex4QjSPzPAOYL-iWqYNsrBZ3ZORNnQbjaHfae4oEBA')
   .then(response => response.json())
-  .then(data => console.log(data));
+  .then(data => {(data);
+  })
+  .catch(err => console.log(err))
+
+  function fetchPhotos(response){
+    const photos = response.results;
+    console.log(photos)
+
+  }

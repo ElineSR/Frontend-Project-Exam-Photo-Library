@@ -12,3 +12,9 @@ body{
 .mainBGcolor{
  background-color:#F2F2F2; 
 }
+
+.logo{
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+}
