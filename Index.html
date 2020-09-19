@@ -10,20 +10,29 @@
     </head>
     <body class="mainLayout">
         <header class="mainBGcolor">
-        <a class="logo"  href="index.html"><img class="logo" src="/images/phobrary3.svg" alt="Phobrary logo"></a>
+        <a href="index.html"><img class="logo" src="/images/phobrary3.svg" alt="Phobrary logo"></a>
             <nav>
-              <div>
-                <input type="text" placeholder="Search images..">
-                <button onclick="myFunction()"></button>
-              </div>
+                <div class ="formContainer">
+              <form class="searchForm">
+                <input class ="searchBar" id="searchSubmit" type="search" name="qsearch" aria-label="Search for photos" placeholder="Search images..">
+                <input class="eyeglass" 
+                id="eyeglassButton" 
+                value="search" 
+                type="image" 
+                alt="search button" 
+                src="/images/Search.png" 
+                onclick="photoSearch();return false;">
+              </form>
+            </div>
             </nav>
         </header>
-        <main>
+        <main class="mainContentContainer">
+            <img class="HomeImage" src="" alt="">
             <h1>Title</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates nostrum molestiae maiores architecto fuga dolores ducimus cumque voluptatibus quisquam voluptatum in, suscipit soluta ullam pariatur sunt iusto! Architecto, culpa accusantium.</p>
 
         </main>
-        <footer class="mainBGcolor">
+        <footer class="mainBGcolor footerContentContainer">
             copyright &copy;
         </footer>
     <script src="script.js"></script>    

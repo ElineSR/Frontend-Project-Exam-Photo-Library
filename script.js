@@ -1,26 +1,66 @@
 
 // const accessKey = "Iex4QjSPzPAOYL-iWqYNsrBZ3ZORNnQbjaHfae4oEBA"
-// const baseUrl = 
 
-// JSON.parse();
+function redirect(){
+  window.location.href = "/searchResults.html";
+}
+// function photoSearch(){
+// let str = document.getElementById("searchSubmit").value;
+//   if str === false
+//   else
+//   console.log(str);
+// }
 
-// import Unsplash from 'unsplash-js';
 
-// const unsplash = new Unsplash({
-//   applicationId: "{APP_ACCESS_KEY}",
-//   secret: "{APP_SECRET}"
-// });
+// const searchSubmit = document.querySelector("#searchSubmit");
+// console.log
+
+// const api = "https://api.unsplash.com/search/photos?query=";
+// const apiKey = "client_id=Iex4QjSPzPAOYL-iWqYNsrBZ3ZORNnQbjaHfae4oEBA";
 
 
+// const url = api + searchSubmit + apiKey;
 
-fetch('https://api.unsplash.com/search/photos?query=minimal&client_id=Iex4QjSPzPAOYL-iWqYNsrBZ3ZORNnQbjaHfae4oEBA')
-  .then(response => response.json())
-  .then(data => {(data);
-  })
-  .catch(err => console.log(err))
+const url = 'https://api.unsplash.com/search/photos?query=minimal&client_id=Iex4QjSPzPAOYL-iWqYNsrBZ3ZORNnQbjaHfae4oEBA';
 
-  function fetchPhotos(response){
-    const photos = response.results;
-    console.log(photos)
+async function getPhotos(){
+  const response = await fetch(url);
+  const results = await response.json();
+  const photoResults = results.results;
 
+  for(let i = 0; i < photoResults.length; 1++){
+    console.log(photoResults[i].urls.thumb);
   }
+
+
+
+
+}
+
+getPhotos();
+
+
+
+
+
+
+
+
+
+
+
+
+// fetch('https://api.unsplash.com/search/photos?query=minimal&client_id=Iex4QjSPzPAOYL-iWqYNsrBZ3ZORNnQbjaHfae4oEBA')
+//   .then(response => response.json())
+//   .then(data => {
+//     (data);
+//   })
+//   .catch(err => console.log(err))
+
+//   function fetchPhotos(response){
+//     let photos = response.results;
+//     for (let i = 0; index < photos.length; i++) {
+//       console.log(response.results[i]);
+      
+//     }
+//   }
