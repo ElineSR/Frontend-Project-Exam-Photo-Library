@@ -28,8 +28,15 @@ async function getPhotos(){
   const results = await response.json();
   const photoResults = results.results;
 
-  for(let i = 0; i < photoResults.length; 1++){
+  document.querySelector("#searchpage").innerHTML += "<h2>Number of search results :" 3 "</h2>";
+
+  for(let i = 0; i < photoResults.length; i++){
+    document.querySelector('#searchPage').innerHTML += '<img class="imgSearchStyle" src="' + photoResults[i].urls.thumb +'" alt="' + photoResults[i].alt_description+'"><a class="linkStyle" href = "'+ photoResults[i].user.name +'" ></a>';
+      
+
+
     console.log(photoResults[i].urls.thumb);
+    
   }
 
 
