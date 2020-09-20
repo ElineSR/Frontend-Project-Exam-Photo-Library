@@ -1,3 +1,5 @@
+//Getting a random image for the frontpage
+
 const homepageImg = document.querySelector("#homepageImg");
 
 const url = 'https://api.unsplash.com//photos/random?&client_id=Iex4QjSPzPAOYL-iWqYNsrBZ3ZORNnQbjaHfae4oEBA';
